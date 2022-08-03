@@ -9,8 +9,6 @@ class Solution:
                 m[i] = 1
                 
         for i in ransomNote:
-            if i not in magazine:
-                return False
-            if ransomNote.count(i) > m[i]:
+            if i not in magazine or ransomNote.count(i) > m[i]:
                 return False
         return True
