@@ -1,1 +1,1 @@
-​
+Use binary Search algo to return the position from where all the negative numbers are present
