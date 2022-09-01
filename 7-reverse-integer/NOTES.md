@@ -1,0 +1,4 @@
+1.  We do the classic modulus function to get the ast digit and keep multiplying in multiples of 10 and adding the modulus of next iteration (Easy Problem)
+2.  For overflow:
+-> 1st case **(positive side)** - when the rev number is greater than max value we return 0 or if it is equal to max value then the return value of modulus cannot be greater than 7 as this is the last digit of the max value and going beyond this will cause an overflow
+-> 2nd case **(negative side)** - When the rev number is less than min value we return 0 or if it is equal to min value then return value cannot be less than -8 as  8 is the last digit of this in value and going below this will cause overfow
