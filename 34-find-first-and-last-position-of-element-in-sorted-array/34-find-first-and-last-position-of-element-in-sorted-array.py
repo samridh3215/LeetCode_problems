@@ -1,5 +1,6 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
+        l = len(nums)
         def bin(a, low, high, target):
             if (nums ==[] or target>nums[-1]):
                 return [-1,-1]
@@ -9,7 +10,7 @@ class Solution:
                     i, j = mid, mid
                     while(i>=0 and a[i] == target):
                         i-=1
-                    while(j<len(nums) and a[j]==target):
+                    while(j<l and a[j]==target):
                         j +=1
                     return [i+1, j-1]
                 elif(a[mid]>target):
@@ -18,4 +19,4 @@ class Solution:
                     return bin(a, mid+1, high, target)
                 
             return [-1, -1]
-        return(bin(nums, 0, len(nums), target))
+        return(bin(nums, 0, l, target))
