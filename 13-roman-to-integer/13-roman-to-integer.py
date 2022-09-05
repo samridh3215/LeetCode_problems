@@ -14,8 +14,8 @@ class Solution(object):
         result =0
         for i in range(len(s)-1):
             if(maps[s[i]]<maps[s[i+1]]):
-                result -= maps[s[i]]
+                result -= maps[s[i]] 
             else:
-                result+= maps[s[i]]
-        return (result+maps[s[-1]])
+                result+= maps[s[i]] #this goes till the second last #lement
+        return (result+maps[s[-1]]) # we add maps[s[-1]] to get the last #umber 
         
