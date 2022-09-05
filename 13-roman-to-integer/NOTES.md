@@ -1,1 +1,1 @@
-​
+as the range is from 0 to len-2 the last element does not get included in the loop therefore we add the last element in the result while returning it
