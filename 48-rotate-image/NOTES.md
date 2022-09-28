@@ -1,0 +1,1 @@
+first reverse and then swap all elements to rotate elements of the edges by 90 degree
