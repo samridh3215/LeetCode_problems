@@ -1,7 +1,7 @@
 #User function Template for python3
 class Solution:
     def oddEven (ob,N):
-        if(N%2 != 0):
+        if(N&1 == 1):
             return("odd")
         else:
             return("even")
